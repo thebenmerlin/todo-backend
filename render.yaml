@@ -1,0 +1,10 @@
+# Optional: render service config for Infrastructure-as-code.
+services:
+  - type: web
+    name: todo-backend
+    env: docker
+    docker:
+      dockerfilePath: Dockerfile
+    plan: starter
+    region: oregon
+    healthCheckPath: /health
